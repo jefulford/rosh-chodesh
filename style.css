@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash|Alegreya+Sans:400,800|Alegreya+Sans+SC");
+
+:root {
+	--flower: #cbbab8;
+	--flower-dark: #bb8d76;
+	--flower-light: #e1e1e0;
+	--flower-orange: #c27754;
+
+	--sky: #65bbc5;
+	--sky-light: #92c9ce;
+
+	--branch: #19232c;
+	--branch-light: #66605e;
+
+	--cursor: default;
+
+	--menu-transition: all 2s;
+	--color-transition: color .5s;
+}
+body {
+	padding: 0px;
+	margin: 0px;
+	background-image: url("meric-dagli-518103 copy.jpg");
+}
+p {
+	margin: 0px;
+	padding: 0px;
+}
+a {
+	color: var(--sky-light);
+}
+a:hover {
+	color: var(--branch-light) !important;
+}
+/*Hebrew on side*/
+
+#hebrew {
+	position: absolute;
+	top: 0;
+	right: 5%;
+	z-index: -10;
+	width: 100px;
+}
+#hebrew-text {
+	font-size: 250px;
+	text-align: right;
+	line-height: 0.8;
+	color: var(--flower);
+	opacity: .11;
+}
+#hebrew-text:hover {
+	cursor: var(--cursor);
+}
+#hebrew-text::-moz-selection {
+	background-color: none;
+}
+#hebrew-text::selection {
+	background-color: none;
+}
+/*menu*/
+
+#menu-list {
+	list-style: none;
+	padding: 0px;
+	margin: 20px;
+	text-align: center;
+	transition: var(--menu-transition);
+}
+#menu-list li {
+	font-family: Alegreya Sans;
+	padding-bottom: 10px;
+}
+#menu-list li a {
+	text-decoration: none;
+}
+#menu-list li a:hover {
+	color: var(--sky) !important;
+	transition: var(--color-transition);
+
+}
+#menu-list #close-menu {
+	font-family: Alegreya Sans SC;
+	font-size: 20px;
+	padding-top: 5px;
+	cursor: hand;
+	cursor: pointer;
+	color: var(--flower-light);
+}
+#menu-list #close-menu:hover {
+	color: var(--flower) !important;
+	transition: var(--color-transition);
+}
+#menu {
+	position: fixed;
+	z-index: 10;
+	width: 20%;
+	background-color: var(--branch-light);
+	top: 0;
+	left: 40%;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	transition: var(--menu-transition);
+}
+.menu-full {
+	width: 40% !important;
+	left: 30% !important;
+	transition: var(--menu-transition);
+}
+.bar {
+	width: 60%;
+	border: .5px solid var(--sky);
+	margin-left: 20% !important;
+	margin: 4px;
+}
+#bars {
+	padding-bottom: 2px;
+}
+#bars:hover {
+	cursor: pointer;
+	cursor: hand;
+}
+
+
+/*landing*/
+
+#landing {
+	margin-left: 100px;
+	margin-top: 200px;
+}
+#rosh-chodesh {
+	font-size: 120px;
+	font-family: Berkshire Swash;
+	display: block;
+	color: var(--sky);
+}
+#happy {
+	font-size: 50px;
+	font-family: Alegreya Sans SC;
+	font-weight: 400;
+	display: block;
+	margin-bottom: 10px;
+	color: var(--sky-light);
+}
+#landing-caret {
+	color: var(--flower);
+	font-size: 80px;
+	margin-top: 160px;
+	margin-left: 40%;
+	width: 10%;
+	cursor: pointer;
+	cursor: hand;
+}
+
+/*meaning*/
+
+#meaning, #origin, #and-women {
+	margin-top: 60px;
+	margin-left: 100px;
+	padding-top: 40px;
+}
+.heading {
+	font-family: Alegreya Sans SC;
+	font-size: 50px;
+	margin-bottom: 0px;
+	color: var(--flower-orange);
+}
+.byline {
+	font-style: italic;
+	margin-left: 20px;
+	font-size: 26px;
+	font-family: Alegreya Sans;
+	margin-bottom: 10px;
+	color: var(--branch);
+
+}
+.body {
+	font-family: Alegreya Sans;
+	margin-left: 40px;
+	font-size: 18px;
+	line-height: 1.5;
+	color: var(--branch);
+}
+.quote {
+	font-style: italic;
+	padding: 30px 80px;
+	font-family: Alegreya Sans;
+}
+
+.hidden {
+	display: none;
+}
+
+/*FOOTER*/
+#footer {
+	margin-left: 100px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	font-family: Alegreya Sans SC;
+}
+a:hover {
+	color: var(--flower-orange);
+}
